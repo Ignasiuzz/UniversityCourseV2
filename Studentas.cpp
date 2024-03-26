@@ -49,23 +49,20 @@ double GalutinisMed(const Studentas& duom) {
 
 // Skaitymo is failo realizacija
 std::istream& Studentas::readStudent(std::istream& is) {
-    // Read Vardas and Pavarde from input stream
     is >> Vardas_ >> Pavarde_;
-    
-    // Clear existing grades
+
     namudarbas_.clear();
-    
-    // Read grades from input stream
+
     double grade;
     while (is >> grade) {
         namudarbas_.push_back(grade);
     }
-    
-    // Read egzaminas from input stream
+
     egzaminas_ = namudarbas_.back();
     namudarbas_.pop_back();
     return is;
 }
 
+// Destruktorius
 Studentas::~Studentas() {
 }

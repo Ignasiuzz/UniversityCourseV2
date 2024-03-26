@@ -16,6 +16,7 @@ private:
 // interfeisas
 public:
     Studentas() : egzaminas_(0) { }  // default konstruktorius
+    Studentas(const std::string& vardas, const std::string& pavarde, double egzaminas, const std::vector<double>& namudarbas) : Vardas_(vardas), Pavarde_(pavarde), egzaminas_(egzaminas), namudarbas_(namudarbas) {}
     Studentas(std::istream& is);
 
     std::string Vardas() const { return Vardas_; }
@@ -31,8 +32,4 @@ public:
 
     ~Studentas();
 };
-
-// bool compare(const Studentas&, const Studentas&);
-// bool comparePagalPavarde(const Studentas&, const Studentas&);
-// bool comparePagalEgza(const Studentas&, const Studentas&);
 #endif
