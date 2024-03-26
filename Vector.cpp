@@ -2,6 +2,8 @@
 #include "VectorHeader.h"
 #include "Studentas.h"
 
+//g++ -o program Vector.cpp Studentas.cpp
+
 int main() {
     cout << "---------------------------------------- " << endl;
     int mode = NumberVerification("Manual input mode   [1]\nRead from file mode [2]\nFile Generator      [3]\nInput: ", 1, 3);
