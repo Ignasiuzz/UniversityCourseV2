@@ -4,8 +4,8 @@
 #include "VectorIncludes.h"
 
 class Studentas {
-// realizacija
 private:
+// realizacija
     std::string Vardas_;
     std::string Pavarde_;
     double egzaminas_;
@@ -13,8 +13,8 @@ private:
 
     static double Vidurkis(const std::vector<double>& namudarbas);
     static double Mediana(const std::vector<double>& namudarbas);
-// interfeisas
 public:
+// interfeisas
     Studentas() : egzaminas_(0) { }  // default konstruktorius
     Studentas(const std::string& vardas, const std::string& pavarde, double egzaminas, const std::vector<double>& namudarbas) : Vardas_(vardas), Pavarde_(pavarde), egzaminas_(egzaminas), namudarbas_(namudarbas) {}
     Studentas(std::istream& is);

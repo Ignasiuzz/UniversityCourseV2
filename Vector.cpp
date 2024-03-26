@@ -12,7 +12,7 @@ int main() {
         manualmode();
     } 
     else if (mode == 2) {
-        readingmode("1000_GeneratedStudents.txt");
+        readingmode("100000_GeneratedStudents.txt");
     }
     else if (mode == 3){
         filegeneration();
