@@ -11,7 +11,7 @@ void test_constructors() {
     cout << "Test default constructor " << s1.Pavarde() << endl;
     cout << "Test default constructor ";
     for (double grade : s1.Namudarbas()) {
-        std::cout << grade << " ";
+        cout << grade << " ";
     }
     cout << endl << "Test default constructor " << s1.Egzaminas() << endl;
 
@@ -23,7 +23,7 @@ void test_constructors() {
     cout << "Test constructor with input stream " << s2.Pavarde() << endl;
     cout << "Test constructor with input stream ";
     for (double grade : s2.Namudarbas()) {
-        std::cout << grade << " ";
+        cout << grade << " ";
     }
     cout << endl << "Test constructor with input stream " << s2.Egzaminas() << endl;
 
@@ -33,7 +33,7 @@ void test_constructors() {
     cout << "Test copy constructor " << s3.Pavarde() << endl;
     cout << "Test copy constructor ";
     for (double grade : s3.Namudarbas()) {
-        std::cout << grade << " ";
+        cout << grade << " ";
     }
     cout << endl << "Test copy constructor " << s3.Egzaminas() << endl;
 
@@ -43,7 +43,7 @@ void test_constructors() {
     cout << "Test move constructor " << s4.Pavarde() << endl;
     cout << "Test move constructor ";
     for (double grade : s4.Namudarbas()) {
-        std::cout << grade << " ";
+        cout << grade << " ";
     }
     cout << endl << "Test move constructor " << s4.Egzaminas() << endl;
 }
@@ -57,7 +57,7 @@ void test_assignment_operators() {
     cout << "Test copy assignment " << s2.Pavarde() << endl;
     cout << "Test copy assignment ";
     for (double grade : s2.Namudarbas()) {
-        std::cout << grade << " ";
+        cout << grade << " ";
     }
     cout << endl << "Test copy assignment " << s2.Egzaminas() << endl;
 
@@ -68,7 +68,7 @@ void test_assignment_operators() {
     cout << "Test move assignment " << s3.Pavarde() << endl;
     cout << "Test move assignment ";
     for (double grade : s3.Namudarbas()) {
-        std::cout << grade << " ";
+        cout << grade << " ";
     }
     cout << endl << "Test move assignment " << s3.Egzaminas() << endl;
 }
@@ -86,10 +86,10 @@ void test_input_output_methods() {
     cout << "Test manual input " << s1.Pavarde() << endl;
     cout << "Test manual input ";
     for (double grade : s1.Namudarbas()) {
-        std::cout << grade << " ";
+        cout << grade << " ";
     }
     cout << endl;
-    cout << "Test manual input " << s1.Egzaminas() << std::endl;
+    cout << "Test manual input " << s1.Egzaminas() << endl;
 }
 
 int main() {
