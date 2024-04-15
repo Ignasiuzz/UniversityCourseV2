@@ -30,7 +30,8 @@ Class. Student sorting to two groups took 0.600509 seconds.
 ## Class Structure  
 `Zmogus` abstrakčioje klasėje yra šie nariai:  
 - `Vardas_`: String tipo studento vardas.  
-- `Pavarde_`: String tipo studento pavarde.   
+- `Pavarde_`: String tipo studento pavarde.
+
 `Studentas` klasėje yra šie nariai:  
 - `egzaminas_`: Double tipo egzamino pažymys.  
 - `namudarbas_`: Double vectoriaus tipo namų darbų pažymiai.  
