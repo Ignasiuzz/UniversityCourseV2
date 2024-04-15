@@ -1,8 +1,6 @@
 #include "VectorIncludes.h"
-#include "VectorHeader.h"
 #include "Studentas.h"
-#include <cassert>
-//g++ -o program Vector.cpp Studentas.cpp
+//g++ -o program test.cpp Studentas.cpp
 
 void test_constructors() {
     // Test default constructor
@@ -92,10 +90,18 @@ void test_input_output_methods() {
     cout << "Test manual input " << s1.Egzaminas() << endl;
 }
 
+void test_AverageCalculations() {
+    Studentas s1("John", "Doe", 8, {6, 7, 3, 4, 9});
+    cout << "Test GalutinisMed calculations (7.2) " << GalutinisMed(s1) << endl;
+    cout << "Test GalutinisVid calculations (7.12) " << GalutinisVid(s1) << endl;
+}
+
 int main() {
     test_constructors();
     test_assignment_operators();
     test_input_output_methods();
-
+    test_AverageCalculations();
+    
+    //Zmogus duom("Jonas", "Jonaitis");
     system ("pause");
 }
