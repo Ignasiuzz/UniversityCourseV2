@@ -73,9 +73,29 @@ void test_assignment_operators() {
     cout << endl << "Test move assignment " << s3.Egzaminas() << endl;
 }
 
+void test_input_output_methods() {
+    // Test manual input
+    Studentas s1;
+    s1.setVardas("John");
+    s1.setPavarde("Doe");
+    s1.setNamudarbas({3, 3, 3, 3});
+    s1.setEgzaminas(3);
+
+    // Test output to screen
+    cout << "Test manual input " << s1.Vardas() << endl;
+    cout << "Test manual input " << s1.Pavarde() << endl;
+    cout << "Test manual input ";
+    for (double grade : s1.Namudarbas()) {
+        std::cout << grade << " ";
+    }
+    cout << endl;
+    cout << "Test manual input " << s1.Egzaminas() << std::endl;
+}
+
 int main() {
     test_constructors();
     test_assignment_operators();
+    test_input_output_methods();
 
     system ("pause");
 }
