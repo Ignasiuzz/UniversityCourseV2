@@ -28,11 +28,10 @@ Class. Student sorting to two groups took 0.600509 seconds.
 
 # Studentas Class
 ## Class Structure
-
-`Studentas` klasėje yra šie kintamieji:
-
+`Zmogus` abstrakčioje klasėje yra šie nariai:
 - `Vardas_`: String tipo studento vardas.
-- `Pavarde_`: String tipo studento pavarde.
+- `Pavarde_`: String tipo studento pavarde.  
+`Studentas` klasėje yra šie nariai:
 - `egzaminas_`: Double tipo egzamino pažymys.
 - `namudarbas_`: Double vectoriaus tipo namų darbų pažymiai.
 
@@ -110,6 +109,8 @@ Studento duomenų (Vardas, Pavarde, Namu darbas, Egzaminas, GalutinisMed, Galuti
     cout << "Galutinis vidurkis paprastu budu " << GalutinisVid(data);
 ## Usage
 
-Norint naudotis `Studentas` klase, turite includinti `Studentas.h` savo kode, bei tureti `Studentas.cpp` faila tame paciame folderyje.
+Norint naudotis `Studentas` klase, turite atsisiųsti failus `Studentas.h` `Studentas.cpp` ir `Zmogus.h`. Savo kode turite inlcudinti `Studentas.h`.
 
     #include "Studentas.h"
+
+
