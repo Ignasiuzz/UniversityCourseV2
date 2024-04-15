@@ -1,12 +1,6 @@
 // Studentas.cpp
 #include "Studentas.h"
 
-// konstruktoriaus realizacija
-Studentas::Studentas(std::istream& is) { 
-// kreipiasi į Studentas::readStudent;
-    readStudent(is);  
-}
-
 // Duomenu manual irasymas
 void Studentas::setVardas(const std::string& vardas) {
     Vardas_ = vardas;
@@ -21,7 +15,7 @@ void Studentas::setNamudarbas(const std::vector<double>& namudarbas) {
     namudarbas_ = namudarbas;
 }
 
-// Galutinio vidurkio realizacija
+// Galutinio vidurkio skaiciavimas
 double Studentas::Vidurkis(const std::vector<double>& namudarbas) {
     double sum = 0;
     for (double grade : namudarbas) {
@@ -47,7 +41,7 @@ double GalutinisMed(const Studentas& duom) {
     return 0.4 * ndMedian + 0.6 * duom.egzaminas_;
 }
 
-// Skaitymo is failo realizacija
+// Skaitymas is failo
 std::istream& Studentas::readStudent(std::istream& is) {
     is >> Vardas_ >> Pavarde_;
 
@@ -63,23 +57,23 @@ std::istream& Studentas::readStudent(std::istream& is) {
     return is;
 }
 
+// Default destructor
 Studentas::~Studentas() {
 }
 
 /* Rule of Five */
 // Copy constructor
 Studentas::Studentas(const Studentas& other)
-    : Vardas_(other.Vardas_), Pavarde_(other.Pavarde_), egzaminas_(other.egzaminas_), namudarbas_(other.namudarbas_) {}
+    : Zmogus(other), egzaminas_(other.egzaminas_), namudarbas_(other.namudarbas_) {}
 
 // Move constructor
 Studentas::Studentas(Studentas&& other) noexcept
-    : Vardas_(std::move(other.Vardas_)), Pavarde_(std::move(other.Pavarde_)), egzaminas_(std::move(other.egzaminas_)), namudarbas_(std::move(other.namudarbas_)) {}
+    : Zmogus(std::move(other)), egzaminas_(std::move(other.egzaminas_)), namudarbas_(std::move(other.namudarbas_)) {}
 
 // Copy assignment
 Studentas& Studentas::operator=(const Studentas& other) {
     if (this != &other) {
-        Vardas_ = other.Vardas_;
-        Pavarde_ = other.Pavarde_;
+        Zmogus::operator=(other); // Call base class assignment operator
         namudarbas_ = other.namudarbas_;
         egzaminas_ = other.egzaminas_;
     }
@@ -89,10 +83,14 @@ Studentas& Studentas::operator=(const Studentas& other) {
 // Move assignment
 Studentas& Studentas::operator=(Studentas&& other) noexcept {
     if (this != &other) {
-        Vardas_ = std::move(other.Vardas_);
-        Pavarde_ = std::move(other.Pavarde_);
+        Zmogus::operator=(std::move(other)); // Call base class move assignment operator
         namudarbas_ = std::move(other.namudarbas_);
         egzaminas_ = std::move(other.egzaminas_);
     }
     return *this;
+}
+
+// Virtualios funkcijos aprasymas, kad klase Zmogus butu abstrakti
+void Studentas::doSomething() {
+    std::cout << "Studentas is doing something." << std::endl;
 }
