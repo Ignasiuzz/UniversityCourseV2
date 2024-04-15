@@ -1,7 +1,6 @@
 #include "VectorIncludes.h"
 #include "VectorHeader.h"
 #include "Studentas.h"
-
 //g++ -o program Vector.cpp Studentas.cpp
 
 int main() {
@@ -51,7 +50,6 @@ void readingmode(const string& fileName){
         duom.readStudent(get);
         student.push_back(duom);
     }
-    inputFile.close();
 
     // Stabdomas skaiciuojamas laikas
     auto stop = high_resolution_clock::now();
