@@ -29,7 +29,7 @@ Class. Student sorting to two groups took 0.600509 seconds.
 # Studentas Class
 ## Class Structure
 
-`Studentas` klasėje yra šie kintamieji:
+`Studentas` klasėje yra šie nariai:
 
 - `Vardas_`: String tipo studento vardas.
 - `Pavarde_`: String tipo studento pavarde.
