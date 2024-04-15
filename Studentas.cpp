@@ -63,6 +63,36 @@ std::istream& Studentas::readStudent(std::istream& is) {
     return is;
 }
 
-// Destruktorius
 Studentas::~Studentas() {
+}
+
+/* Rule of Five */
+// Copy constructor
+Studentas::Studentas(const Studentas& other)
+    : Vardas_(other.Vardas_), Pavarde_(other.Pavarde_), egzaminas_(other.egzaminas_), namudarbas_(other.namudarbas_) {}
+
+// Move constructor
+Studentas::Studentas(Studentas&& other) noexcept
+    : Vardas_(std::move(other.Vardas_)), Pavarde_(std::move(other.Pavarde_)), egzaminas_(std::move(other.egzaminas_)), namudarbas_(std::move(other.namudarbas_)) {}
+
+// Copy assignment
+Studentas& Studentas::operator=(const Studentas& other) {
+    if (this != &other) {
+        Vardas_ = other.Vardas_;
+        Pavarde_ = other.Pavarde_;
+        namudarbas_ = other.namudarbas_;
+        egzaminas_ = other.egzaminas_;
+    }
+    return *this;
+}
+
+// Move assignment
+Studentas& Studentas::operator=(Studentas&& other) noexcept {
+    if (this != &other) {
+        Vardas_ = std::move(other.Vardas_);
+        Pavarde_ = std::move(other.Pavarde_);
+        namudarbas_ = std::move(other.namudarbas_);
+        egzaminas_ = std::move(other.egzaminas_);
+    }
+    return *this;
 }
