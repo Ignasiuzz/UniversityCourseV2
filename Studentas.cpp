@@ -68,7 +68,9 @@ Studentas::Studentas(const Studentas& other)
 
 // Move constructor
 Studentas::Studentas(Studentas&& other) noexcept
-    : Zmogus(std::move(other)), egzaminas_(std::move(other.egzaminas_)), namudarbas_(std::move(other.namudarbas_)) {}
+    : Zmogus(std::move(other)), egzaminas_(std::move(other.egzaminas_)), namudarbas_(std::move(other.namudarbas_)) {
+     other.egzaminas_ = 0;
+}
 
 // Copy assignment
 Studentas& Studentas::operator=(const Studentas& other) {
@@ -86,6 +88,8 @@ Studentas& Studentas::operator=(Studentas&& other) noexcept {
         Zmogus::operator=(std::move(other)); // Call base class move assignment operator
         namudarbas_ = std::move(other.namudarbas_);
         egzaminas_ = std::move(other.egzaminas_);
+
+        other.egzaminas_ = 0;
     }
     return *this;
 }
