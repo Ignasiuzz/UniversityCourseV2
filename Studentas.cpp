@@ -73,7 +73,9 @@ Studentas::Studentas(const Studentas& other)
 
 // Move constructor
 Studentas::Studentas(Studentas&& other) noexcept
-    : Vardas_(std::move(other.Vardas_)), Pavarde_(std::move(other.Pavarde_)), egzaminas_(std::move(other.egzaminas_)), namudarbas_(std::move(other.namudarbas_)) {}
+    : Vardas_(std::move(other.Vardas_)), Pavarde_(std::move(other.Pavarde_)), egzaminas_(std::move(other.egzaminas_)), namudarbas_(std::move(other.namudarbas_)) {
+        other.egzaminas_ = 0;
+}
 
 // Copy assignment
 Studentas& Studentas::operator=(const Studentas& other) {
@@ -93,6 +95,8 @@ Studentas& Studentas::operator=(Studentas&& other) noexcept {
         Pavarde_ = std::move(other.Pavarde_);
         namudarbas_ = std::move(other.namudarbas_);
         egzaminas_ = std::move(other.egzaminas_);
+
+        other.egzaminas_ = 0;
     }
     return *this;
 }
