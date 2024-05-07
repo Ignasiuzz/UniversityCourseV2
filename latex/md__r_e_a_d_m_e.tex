@@ -1,0 +1,133 @@
+\chapter{University\+Course\+V2}
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{UniversityCourseV2@{UniversityCourseV2}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+Objektinio programavimo antroji užduotis\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Spartos analize}{Spartos analize}}\label{md__r_e_a_d_m_e_autotoc_md1}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{\texorpdfstring{Be oprimizatoriaus}{Be oprimizatoriaus}}\label{md__r_e_a_d_m_e_autotoc_md2}
+100.\+000 studentų ~\newline
+ Struct. Student sorting to two groups took 0.\+0304037 seconds. ~\newline
+ Class. Student sorting to two groups took 0.\+0443925 seconds. ~\newline
+ 1.\+000.\+000 studentų ~\newline
+ Struct. Student sorting to two groups took 0.\+319136 seconds. ~\newline
+ Class. Student sorting to two groups took 0.\+600509 seconds. ~\newline
+\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{\texorpdfstring{Kompiliatoriaus optimizavimo lygiai}{Kompiliatoriaus optimizavimo lygiai}}\label{md__r_e_a_d_m_e_autotoc_md3}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsubsection{\texorpdfstring{100.\+000 studentų}{100.\+000 studentų}}\label{md__r_e_a_d_m_e_autotoc_md4}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Optimization   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Struct   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Class   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ File size Struct   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ File size Class    }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Optimization   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Struct   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Class   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ File size Struct   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ File size Class    }\\\cline{1-5}
+\endhead
+\PBS\centering O1   &\PBS\centering 0.\+0117796 seconds.   &\PBS\centering 0.\+0195176 seconds.   &\PBS\centering 262 KB   &\PBS\centering 254 KB    \\\cline{1-5}
+\PBS\centering O2   &\PBS\centering 0.\+0114957 seconds.   &\PBS\centering 0.\+0205766 seconds.   &\PBS\centering 266 KB   &\PBS\centering 256 KB    \\\cline{1-5}
+\PBS\centering O3   &\PBS\centering 0.\+0108180 seconds.   &\PBS\centering 0.\+0202935 seconds.   &\PBS\centering 264 KB   &\PBS\centering 259 KB   \\\cline{1-5}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsubsection{\texorpdfstring{1.\+000.\+000 studentų}{1.\+000.\+000 studentų}}\label{md__r_e_a_d_m_e_autotoc_md5}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Optimization   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Struct   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Class   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ File size Struct   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ File size Class    }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Optimization   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Struct   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Class   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ File size Struct   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ File size Class    }\\\cline{1-5}
+\endhead
+\PBS\centering O1   &\PBS\centering 0.\+127661 seconds.   &\PBS\centering 0.\+345793 seconds.   &\PBS\centering 262 KB   &\PBS\centering 254 KB    \\\cline{1-5}
+\PBS\centering O2   &\PBS\centering 0.\+115778 seconds.   &\PBS\centering 0.\+339243 seconds.   &\PBS\centering 266 KB   &\PBS\centering 256 KB    \\\cline{1-5}
+\PBS\centering O3   &\PBS\centering 0.\+115472 seconds.   &\PBS\centering 0.\+333918 seconds.   &\PBS\centering 264 KB   &\PBS\centering 259 KB   \\\cline{1-5}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysection{\texorpdfstring{Studentas Class}{Studentas Class}}\label{md__r_e_a_d_m_e_autotoc_md6}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{\texorpdfstring{Class Structure}{Class Structure}}\label{md__r_e_a_d_m_e_autotoc_md7}
+{\ttfamily \doxylink{class_zmogus}{Zmogus}} abstrakčioje klasėje yra šie nariai\+: ~\newline
+
+\begin{DoxyItemize}
+\item {\ttfamily Vardas\+\_\+}\+: String tipo studento vardas. ~\newline
+
+\item {\ttfamily Pavarde\+\_\+}\+: String tipo studento pavarde.
+\end{DoxyItemize}
+
+{\ttfamily \doxylink{class_studentas}{Studentas}} klasėje yra šie nariai\+: ~\newline
+
+\begin{DoxyItemize}
+\item {\ttfamily egzaminas\+\_\+}\+: Double tipo egzamino pažymys. ~\newline
+
+\item {\ttfamily namudarbas\+\_\+}\+: Double vectoriaus tipo namų darbų pažymiai. ~\newline
+
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysubsection{\texorpdfstring{Data input}{Data input}}\label{md__r_e_a_d_m_e_autotoc_md8}
+Studento duomenų (Vardas, Pavarde, Namu darbas, Egzaminas) rankinis įvedimas\+: ~\newline
+ {\ttfamily .set\+Vardas();} ~\newline
+ {\ttfamily .set\+Pavarde();} ~\newline
+ {\ttfamily .set\+Namudarbas();} ~\newline
+ {\ttfamily .set\+Egzaminas();} ~\newline
+ \begin{DoxyVerb}Studentas data;
+data.setVardas("John");
+data.setPavarde("Doe");
+data.setNamudarbas({8, 6, 9, 5});
+data.setEgzaminas(7);
+\end{DoxyVerb}
+ Studento duomenų (Vardas, Pavarde, Namu darbas, Egzaminas) programoje įvedimo pvz\+: ~\newline
+ \begin{DoxyVerb}Studentas data;
+cout << "Iveskite studento varda: ";
+cin >> temp;
+data.setVardas(temp);
+
+cout << "Iveskite studento pavarde: ";
+cin >> temp;
+data.setPavarde(temp);
+
+vector<double> namudarbas;
+int NumberOfInputs = 5;
+for (int i = 0; i < NumberOfInputs; i++) {
+    cout << "Iveskite studento namu darbo rezultata: ";
+    cin >> temp;
+    namudarbas.push_back(temp);
+}
+duom.setNamudarbas(namudarbas);
+
+cout << "Iveskite studento egzamino rezultata: ";
+cin >> temp;
+data.setEgzaminas(temp);
+\end{DoxyVerb}
+ Studento duomenų (Vardas, Pavarde, Namu darbas, Egzaminas) is failo įvedimas pagal formata kuris pateiktas failuose pavyzdys. Pvz. 1000\+\_\+\+Generated\+Students.\+txt\+: ~\newline
+ \begin{DoxyVerb}vector<Studentas> student;
+ifstream inputFile("1000_GeneratedStudents.txt");
+
+string line;
+getline(inputFile, line); // Naikinama pirma header eilute
+
+// Skaitoma ir apdorojama visa eilute
+while (getline(inputFile, line)) {
+    Studentas duom;
+    istringstream iss(line);
+    duom.readStudent(iss);
+    student.push_back(duom);
+}
+\end{DoxyVerb}
+ \hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysubsection{\texorpdfstring{Data output}{Data output}}\label{md__r_e_a_d_m_e_autotoc_md9}
+Studento duomenų (Vardas, Pavarde, Namu darbas, Egzaminas, Galutinis\+Med, Galutinis\+Vid) išvedimas\+: ~\newline
+ {\ttfamily .Vardas();} ~\newline
+ {\ttfamily .Pavarde();} ~\newline
+ {\ttfamily .Namudarbas();} ~\newline
+ {\ttfamily .Egzaminas();} ~\newline
+ {\ttfamily Galutinis\+Med();} ~\newline
+ {\ttfamily Galutinis\+Vid();} ~\newline
+ \begin{DoxyVerb}Studentas data;
+cout << "Studento vardas " << data.Vardas() << endl;
+cout << "Studento pavarde " << data.Pavarde() << endl;
+cout << "Studento pazymiai ";
+for (double grade : data.Namudarbas()) {
+    std::cout << grade << " ";
+}
+cout << "Studento egzamino rezultatas " << data.Egzaminas() << endl;
+cout << "Galutinis vidurkis naudojant mediana " << GalutinisMed(data);
+cout << "Galutinis vidurkis paprastu budu " << GalutinisVid(data);
+\end{DoxyVerb}
+ \hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{md__r_e_a_d_m_e_autotoc_md10}
+Norint naudotis {\ttfamily \doxylink{class_studentas}{Studentas}} klase, turite atsisiųsti failus {\ttfamily \doxylink{_studentas_8h_source}{Studentas.\+h}} {\ttfamily Studentas.\+cpp} ir {\ttfamily \doxylink{_zmogus_8h_source}{Zmogus.\+h}}. Savo kode turite inlcudinti {\ttfamily \doxylink{_studentas_8h_source}{Studentas.\+h}}. \begin{DoxyVerb}#include "Studentas.h"
+\end{DoxyVerb}
+ 
