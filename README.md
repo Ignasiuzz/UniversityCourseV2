@@ -8,12 +8,21 @@ Pridėtas aprašas apie perdengtus metodus t.y. duomenų įvestis (rankiniu būd
 v1.5 - Realizuota abstrakti klasė Žmogus.
 Studento klasė yra išvestinė iš Žmogaus ir palaiko 1.2 versijoje realizuotą penkių metodų taisyklę.
 
-v2.0 - Sukurkita dokumentacija panaudojant Doxygen. Realizuoti Unit Testai naudojant Google Tests. Galutine programos versija.
+v2.0 - Sukurkita dokumentacija panaudojant Doxygen. Realizuoti Unit Testai naudojant Google Tests. Galutine programos versija su instrukcija.
 
 # Instaliavimas  
-1) Atsisiusti Source code(zip)  
-2) Kompiliuoti pasirinktą Program_Vector.cpp, Program_List.cpp, Program_Deque.cpp jūsų mėgiamu būdu.  
-3) Spausti ant sugeneruoto pvz. Program_Vector.exe  
+1) Susiinstaliuokite c++ compileri sekdami instrukcijas šiame puslapyje https://www.freecodecamp.org/news/how-to-install-c-and-cpp-compiler-on-windows/
+
+2) Susiinstaliuokite cmake, kuris bus reikalingas buildinant programa. Puslapyje https://cmake.org/download/ parsisiuskite Windows x64 ZIP ir isskleiskite ji jusu pasirinktoje vietoje. Tuomet nueikite i cmake aplanka ir nukopijuokite bin aplanko kelia i Environment veriables PATH.
+
+3) Atsidarykite cmd ir naudodami cd nunaviguokite i folderi, i kuri parsisiuntete programa. Tada i terminala iveskite sias komandas:
+
+mkdir build  
+cd build  
+cmake -G "Unix Makefiles" ..  
+cmake --build .  
+copy Program.exe ..  
+Programos paleidziama exe faila rasite programos folderio viduje.  
 
 # Spartos analize  
 ## Be oprimizatoriaus
