@@ -1,6 +1,20 @@
 # UniversityCourseV2
 Objektinio programavimo antroji užduotis
 
+# Releases
+V1.2 - Realizuoti visi metodai atitinkantys penkių metodų taisyklę.
+Pridėtas aprašas apie perdengtus metodus t.y. duomenų įvestis (rankiniu būdu, automatiniu, iš failo), išvestis - į ekraną, į failą.  
+
+v1.5 - Realizuota abstrakti klasė Žmogus.
+Studento klasė yra išvestinė iš Žmogaus ir palaiko 1.2 versijoje realizuotą penkių metodų taisyklę.
+
+v2.0 - Sukurkita dokumentacija panaudojant Doxygen. Realizuoti Unit Testai naudojant Google Tests. Galutine programos versija.
+
+# Instaliavimas  
+1) Atsisiusti Source code(zip)  
+2) Kompiliuoti pasirinktą Program_Vector.cpp, Program_List.cpp, Program_Deque.cpp jūsų mėgiamu būdu.  
+3) Spausti ant sugeneruoto pvz. Program_Vector.exe  
+
 # Spartos analize  
 ## Be oprimizatoriaus
 100.000 studentų  
@@ -113,5 +127,4 @@ Studento duomenų (Vardas, Pavarde, Namu darbas, Egzaminas, GalutinisMed, Galuti
 Norint naudotis `Studentas` klase, turite atsisiųsti failus `Studentas.h` `Studentas.cpp` ir `Zmogus.h`. Savo kode turite inlcudinti `Studentas.h`.
 
     #include "Studentas.h"
-
 
